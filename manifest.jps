@@ -44,7 +44,7 @@
             "cmd [wazuh]":
             [
                 "echo '[START] Action-Deploy' > '${globals.logfile}'",
-                "curl -fsS https://raw.githubusercontent.com/data-sciences-corporation/wazuh-jps/main/scripts/deploy.sh",
+                "curl -fsS https://raw.githubusercontent.com/data-sciences-corporation/wazuh-jps/main/scripts/deploy.sh | sh",
                 "echo '[ END ] Action-Deploy' >> '${globals.logfile}'"
             ]
         }
