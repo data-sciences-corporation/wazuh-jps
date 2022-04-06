@@ -1,7 +1,7 @@
 {
     "type": "install",
-    "version": "0.22.03.10-beta",
-    "id": "threeCx",
+    "version": "0.22.04.06-beta",
+    "id": "wazuh",
     "baseUrl": "https://raw.githubusercontent.com/data-sciences-corporation/wazuh-jps/master",
     "description":
     {
@@ -16,11 +16,8 @@
     },
     "globals":
     {
-        "password": "${fn.password(20)}",
         "logfile":"/var/log/jps-wazuh-install.log"
     },
-    "settings":
-    {},
     "nodes":
     [
         {
