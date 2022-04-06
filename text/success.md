@@ -4,11 +4,9 @@
 
 ### Information
 
-URL: ${env.domain}
-URL: ${env.url}
-URL: ${env.shirtdomain}
-URL: ${nodes.domain}
-Public IP address: ${nodes.wazuh[0].extIPs[0]}
+* URL: ${env.domain}
+* URL: ${nodes.wazuh[0].domain}
+* Public IP address: ${nodes.wazuh[0].extIPs[0]}
 
 * Wazuh TCP [1514,1515]
 * Wazuh UDP [1514]
