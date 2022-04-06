@@ -1,13 +1,11 @@
-#### [Wazuh Dashboard](https://${env.domain}:443)
+#### [Wazuh Dashboard](https://node${nodes.wazuh[0].id}-${env.domain}:443)
 
 ### Information
 
 #### Access
 
-* URL: ${env.domain}
-* URL: ${nodes.wazuh[0].url}
-* URL: ${nodes.wazuh[0].adminUrl}
-* Public IP address: ${nodes.wazuh[0].extIPs[0]}
+* URL: `https://node${nodes.wazuh[0].id}-${env.domain}:443`
+* Public IP address: `${nodes.wazuh[0].extIPs[0]}`
 
 #### Ports
 
