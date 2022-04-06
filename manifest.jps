@@ -1,0 +1,57 @@
+{
+    "type": "install",
+    "version": "0.22.03.10-beta",
+    "id": "threeCx",
+    "baseUrl": "https://raw.githubusercontent.com/data-sciences-corporation/wazuh-jps/master",
+    "description":
+    {
+        "text": "text/description.md",
+        "short": "A docker based deployment of Wazuh as a Service"
+    },
+    "logo": "https://logz.io/wp-content/uploads/2019/05/wazuh_logo.png",
+    "name": "Wazuh",
+    "targetRegions":
+    {
+        "type": "vz7"
+    },
+    "globals":
+    {
+        "password": "${fn.password(20)}",
+        "logfile":"/var/log/jps-wazuh-install.log"
+    },
+    "settings":
+    {},
+    "nodes":
+    [
+        {
+            "cloudlets": 32,
+            "nodeType": "dockerengine",
+            "nodeGroup": "wazuh",
+            "displayName": "Wazuh Node",
+            "extip": true,
+            "count": "1",
+            "env":
+            {
+                "JELASTIC_PORTS": "443, 514, 1516, 9200, ,9600 ,9650 ,55000 ,1514-1515"
+            }
+        }
+    ],
+    "onInstall":
+    [
+        "deploy"
+    ],
+    "actions":
+    {
+        "deploy":
+        {
+            "cmd [wazuh]":
+            [
+                "echo '[START] Action-Deploy' > '${globals.logfile}'",
+                "curl -fsS https://raw.githubusercontent.com/data-sciences-corporation/wazuh-jps/main/scripts/deploy.sh",
+                "echo '[ END ] Action-Deploy' >> '${globals.logfile}'"
+            ]
+        }
+    },
+    "skipNodeEmails": "true",
+    "success": "text/success.md"
+}
