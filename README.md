@@ -5,7 +5,7 @@
 * This is a docker container instance, leveraging a Jelastic curated docker instance.
 * This deplyment is based off of Wazuh's official [docker guide](https://documentation.wazuh.com/current/docker/wazuh-container.html).
 
-## Usage:
+## Usage
 
 No special instructions should be needed.
 
@@ -19,10 +19,11 @@ No special instructions should be needed.
 * [JCA] Add a "New Installation" in the marketplace and copy the contents of the .jps file into the text box.
   Once published, users will find it in their marketplace catalog.
 
-## Support:
+## Support
 
 This build is offered with no promise of warrenty or support.
 However, please contact the team at Data Sciences Corporation (helpdesk@datasciences.co.za) if you would like some information.
 
-## Licence:
+## Licence
+
 [Wazuh Licence Agreement](https://github.com/wazuh/wazuh/blob/master/LICENSE)
