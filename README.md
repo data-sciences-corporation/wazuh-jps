@@ -1,6 +1,6 @@
-# Jelastic - 3CX as a Service
+# Jelastic - Wazuh as a Service
 
-![Wazuh Logo](https://imgs.search.brave.com/o7p_e4la8IR-X8Dx43QqafytaOCUBArHSTcNcYHjLv0/rs:fit:272:128:1/g:ce/aHR0cHM6Ly9sb2d6/LmlvL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE5LzA1L3dhenVo/X2xvZ28ucG5n)
+![Wazuh Logo](https://logz.io/wp-content/uploads/2019/05/wazuh_logo.png)
 
 * This is a docker container instance, leveraging a Jelastic curated docker instance.
 * This deplyment is based off of Wazuh's official [docker guide](https://documentation.wazuh.com/current/docker/wazuh-container.html).
@@ -23,3 +23,6 @@ No special instructions should be needed.
 
 This build is offered with no promise of warrenty or support.
 However, please contact the team at Data Sciences Corporation (helpdesk@datasciences.co.za) if you would like some information.
+
+## Licence:
+[Wazuh Licence Agreement](https://github.com/wazuh/wazuh/blob/master/LICENSE)
