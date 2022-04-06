@@ -7,10 +7,10 @@
 URL: ${nodes.wazuh[0].url}
 Public IP address: ${nodes.wazuh[0].extIPs[0]}
 
-Wazuh TCP [1514,1515]
-Wazuh UDP [1514]
-Elasticsearch HTTP [9200]
-Kibana HTTPS [443]
+* Wazuh TCP [1514,1515]
+* Wazuh UDP [1514]
+* Elasticsearch HTTP [9200]
+* Kibana HTTPS [443]
 
 ### Licensing
 
