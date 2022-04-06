@@ -7,6 +7,7 @@
 #### Access
 
 * URL: ${env.domain}
+* URL: ${nodes.wazuh[0].endpoints.domain}
 * URL: ${nodes.wazuh[0].url}
 * Public IP address: ${nodes.wazuh[0].extIPs[0]}
 
