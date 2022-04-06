@@ -1,20 +1,18 @@
 ### Access
 
-#### [Wazuh Elasticsearch dashboard](https://${nodes.3cx[0].url}:443)
+#### [Wazuh Dashboard](https://${nodes.wazuh[0].url}:443)
 
 ### Information
 
-URL: ${nodes.3cx[0].url}
-Public IP address: ${nodes.3cx[0].extIPs[0]}
+URL: ${nodes.wazuh[0].url}
+Public IP address: ${nodes.wazuh[0].extIPs[0]}
 
-| PORT | SERVICE |
-| ---- | ---- |
-|   1514   |   Wazuh TCP   |
-|   1515   |   Wazuh TCP   |
-|   1514   |   Wazuh UDP   |
-|   9200   |   Elasticsearch HTTP   |
-|   443   |   Kibana HTTPS   |
+Wazuh TCP [1514,1515]
+Wazuh UDP [1514]
+Elasticsearch HTTP [9200]
+Kibana HTTPS [443]
 
 ### Licensing
 
 You will need to provide your own licence as provided/required by the software vendor.
+[Wazauh Licence Agreement](https://github.com/wazuh/wazuh/blob/master/LICENSE)
