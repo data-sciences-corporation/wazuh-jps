@@ -13,6 +13,7 @@
 
 * Wazuh TCP [1514,1515]
 * Wazuh UDP [1514]
+* Wazuh API [55000]
 * Elasticsearch HTTP [9200]
 * Kibana HTTPS [443]
 
