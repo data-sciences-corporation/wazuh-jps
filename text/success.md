@@ -1,6 +1,4 @@
-# Wazuh as a Service
-
-## [Wazuh Dashboard](https://${env.domain}:443)
+#### [Wazuh Dashboard](https://${env.domain}:443)
 
 ### Information
 
