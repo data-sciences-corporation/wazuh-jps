@@ -1,10 +1,13 @@
 ### Access
 
-#### [Wazuh Dashboard](https://${nodes.wazuh[0].url}:443)
+#### [Wazuh Dashboard](https://${env.domain}:443)
 
 ### Information
 
-URL: ${nodes.wazuh[0].url}
+URL: ${env.domain}
+URL: ${env.url}
+URL: ${env.shirtdomain}
+URL: ${nodes.domain}
 Public IP address: ${nodes.wazuh[0].extIPs[0]}
 
 * Wazuh TCP [1514,1515]
