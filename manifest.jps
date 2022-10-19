@@ -8,7 +8,7 @@
         "text": "text/description.md",
         "short": "A docker based deployment of Wazuh as a Service"
     },
-    "logo": "https://logz.io/wp-content/uploads/2019/05/wazuh_logo.png",
+    "logo": "./media/images/wazuh.png",
     "name": "Wazuh",
     "targetRegions":
     {
